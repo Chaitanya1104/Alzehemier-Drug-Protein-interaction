@@ -125,7 +125,7 @@ def to_graphos(df_results, threshold=0.5):
 if __name__ == "__main__":
     if not os.path.exists('Prediction'):
         os.makedirs('Prediction')
-    models_path = './output/ML_models'
+    models_path = './output/Trained_models'
     data_path = './molecules-to-screen.csv'  # File name with the molecules to screen
     df_results = predictor(models_path, data_path)
     to_graphos(df_results, 0.7) # probablily threshold
